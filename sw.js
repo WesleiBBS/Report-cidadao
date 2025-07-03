@@ -3,13 +3,13 @@ const STATIC_CACHE = 'static-v1.0'
 const DYNAMIC_CACHE = 'dynamic-v1.0'
 
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icon.svg',
-  '/icon-192.png',
-  '/icon-512.png',
-  '/favicon.svg'
+  '/Report-cidadao/',
+  '/Report-cidadao/index.html',
+  '/Report-cidadao/manifest.json',
+  '/Report-cidadao/icon.svg',
+  '/Report-cidadao/icon-192.png',
+  '/Report-cidadao/icon-512.png',
+  '/Report-cidadao/favicon.svg'
 ]
 
 // Instalar service worker

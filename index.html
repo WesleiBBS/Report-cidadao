@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Report-cidadao/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
     
     <!-- PWA Meta Tags -->
@@ -12,20 +12,20 @@
     <meta name="author" content="Report Cidadão" />
     
     <!-- PWA Manifest -->
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/Report-cidadao/manifest.json" />
     
     <!-- Apple PWA Meta Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Report Cidadão" />
-    <link rel="apple-touch-icon" href="/icon-192.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/icon-192.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon-192.png" />
-    <link rel="apple-touch-icon" sizes="167x167" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/Report-cidadao/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/Report-cidadao/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/Report-cidadao/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="/Report-cidadao/icon-192.png" />
     
     <!-- Microsoft PWA Meta Tags -->
     <meta name="msapplication-TileColor" content="#f97316" />
-    <meta name="msapplication-TileImage" content="/icon-192.png" />
+    <meta name="msapplication-TileImage" content="/Report-cidadao/icon-192.png" />
     <meta name="msapplication-navbutton-color" content="#f97316" />
     
     <!-- Android PWA Meta Tags -->
@@ -39,27 +39,27 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Report Cidadão - Reporte Estradas" />
     <meta property="og:description" content="PWA para reportar problemas nas estradas e vias públicas" />
-    <meta property="og:image" content="/icon-192.png" />
-    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/Report-cidadao/icon-192.png" />
+    <meta property="og:url" content="/Report-cidadao/" />
     
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Report Cidadão" />
     <meta name="twitter:description" content="PWA para reportar problemas nas estradas e vias públicas" />
-    <meta name="twitter:image" content="/icon-192.png" />
+    <meta name="twitter:image" content="/Report-cidadao/icon-192.png" />
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Reporte Estradas - Prefeitura" />
     <meta property="og:description" content="Aplicativo para reportar problemas nas estradas do município à prefeitura" />
-    <meta property="og:image" content="/icon.svg" />
-    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/Report-cidadao/icon.svg" />
+    <meta property="og:url" content="/Report-cidadao/" />
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Reporte Estradas - Prefeitura" />
     <meta name="twitter:description" content="Aplicativo para reportar problemas nas estradas do município à prefeitura" />
-    <meta name="twitter:image" content="/icon.svg" />
+    <meta name="twitter:image" content="/Report-cidadao/icon.svg" />
     
     <title>Reporte Estradas - Prefeitura</title>
     
@@ -114,18 +114,8 @@
     <script type="module" src="/src/main.jsx"></script>
     
     <script>
-      // Registrar Service Worker
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then((registration) => {
-              console.log('SW registrado com sucesso:', registration.scope);
-            })
-            .catch((registrationError) => {
-              console.log('Falha ao registrar SW:', registrationError);
-            });
-        });
-      }
+      // Service Worker é registrado automaticamente pelo plugin PWA
+      // Não é necessário registro manual
       
       // Remover loading screen quando app carregar
       window.addEventListener('load', () => {

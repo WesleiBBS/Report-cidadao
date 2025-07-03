@@ -2,31 +2,31 @@
   "name": "Reporte Estradas - Prefeitura",
   "short_name": "Reporte Estradas",
   "description": "Aplicativo para reportar problemas nas estradas do município à prefeitura",
-  "start_url": "/",
+  "start_url": "/Report-cidadao/",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#f97316",
   "orientation": "portrait-primary",
-  "scope": "/",
+  "scope": "/Report-cidadao/",
   "lang": "pt-BR",
   "categories": ["utilities", "government"],
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "/Report-cidadao/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon.svg",
+      "src": "/Report-cidadao/icon-192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon.svg",
+      "src": "/Report-cidadao/icon-512.png",
       "sizes": "512x512", 
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ],

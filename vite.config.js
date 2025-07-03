@@ -9,9 +9,9 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,json,vue,txt,woff2}']
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,json,txt,woff2}']
       },
-      includeAssets: ['favicon.svg', 'icon.svg', 'icon-192.png'],
+      includeAssets: ['icon.svg', 'icon-192.png', 'icon-512.png'],
       manifest: {
         name: 'Report Cidadão - Reporte Estradas',
         short_name: 'Report Cidadão',
@@ -38,7 +38,7 @@ export default defineConfig({
             purpose: 'any maskable'
           },
           {
-            src: '/icon-192.png',
+            src: '/icon-512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable'
@@ -72,5 +72,5 @@ export default defineConfig({
       }
     }
   },
-  base: './'
+  base: '/'
 })

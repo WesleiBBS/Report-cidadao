@@ -1,7 +1,7 @@
 {
-  "name": "Reporte Estradas - Prefeitura",
-  "short_name": "Reporte Estradas",
-  "description": "Aplicativo para reportar problemas nas estradas do município à prefeitura",
+  "name": "Report Cidadão - Reporte Estradas",
+  "short_name": "Report Cidadão",
+  "description": "PWA para reportar problemas nas estradas e vias públicas diretamente à prefeitura",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",
@@ -9,25 +9,73 @@
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "pt-BR",
-  "categories": ["utilities", "government"],
+  "categories": ["utilities", "government", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Novo Reporte",
+      "short_name": "Reportar",
+      "description": "Criar um novo reporte de problema",
+      "url": "/",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Histórico",
+      "short_name": "Histórico",
+      "description": "Ver histórico de reportes",
+      "url": "/historico",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
   "icons": [
     {
       "src": "/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
-      "src": "/icon.svg",
+      "src": "/icon-192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon.svg",
+      "src": "/icon-512.png",
       "sizes": "512x512", 
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow"
     }
   ],
   "features": [
@@ -37,6 +85,13 @@
   "permissions": [
     "camera",
     "geolocation"
-  ]
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "protocol_handlers": [],
+  "edge_side_panel": {},
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
 }
-

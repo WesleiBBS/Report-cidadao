@@ -40,7 +40,7 @@
     <meta property="og:title" content="Report Cidadão - Reporte Estradas" />
     <meta property="og:description" content="PWA para reportar problemas nas estradas e vias públicas" />
     <meta property="og:image" content="/Report-cidadao/icon-192.png" />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="/Report-cidadao/" />
     
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary" />
@@ -53,7 +53,7 @@
     <meta property="og:title" content="Reporte Estradas - Prefeitura" />
     <meta property="og:description" content="Aplicativo para reportar problemas nas estradas do município à prefeitura" />
     <meta property="og:image" content="/Report-cidadao/icon.svg" />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="/Report-cidadao/" />
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -115,18 +115,8 @@
     <div id="root"></div>
     
     <script>
-      // Registrar Service Worker
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then((registration) => {
-              console.log('SW registrado com sucesso:', registration.scope);
-            })
-            .catch((registrationError) => {
-              console.log('Falha ao registrar SW:', registrationError);
-            });
-        });
-      }
+      // Service Worker é registrado automaticamente pelo plugin PWA
+      // Não é necessário registro manual
       
       // Remover loading screen quando app carregar
       window.addEventListener('load', () => {
